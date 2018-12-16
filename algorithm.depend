@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1544276258 source:e:\code blocks\algorithm\main.c
+1544887977 source:e:\code blocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
@@ -35,7 +35,7 @@
 1543761187 source:e:\code blocks\algorithm\radix_sort.c
 	"pub_include.h"
 
-1544276688 e:\code blocks\algorithm\tree\tree_pup.h
+1544968991 e:\code blocks\algorithm\tree\tree_pup.h
 
 1544275114 e:\code blocks\algorithm\sort\sort_pub.h
 
@@ -54,6 +54,9 @@
 1544275180 source:e:\code blocks\algorithm\sort\radix_sort.c
 	"../pub_include.h"
 
-1544277831 source:e:\code blocks\algorithm\tree\binary_search_tree.c
+1544884617 source:e:\code blocks\algorithm\tree\binary_search_tree.c
+	"../pub_include.h"
+
+1544919649 source:e:\code blocks\algorithm\tree\rb_tree.c
 	"../pub_include.h"
 

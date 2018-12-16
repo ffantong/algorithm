@@ -13,5 +13,7 @@ int main()
     test_radix_sort();
     printf("\n");
     test_tree();
+    printf("\n");
+    test_rb_tree();
     return 0;
 }

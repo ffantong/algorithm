@@ -31,28 +31,36 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="counting_sort.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="find_max_subarray.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="heap_sort.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="insert_sort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="pub_include.h" />
-		<Unit filename="quick_sort.c">
+		<Unit filename="sort/counting_sort.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="radix_sort.c">
+		<Unit filename="sort/heap_sort.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sort/insert_sort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sort/quick_sort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sort/radix_sort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sort/sort_pub.h" />
+		<Unit filename="tree/binary_search_tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tree/rb_tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tree/tree_pup.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

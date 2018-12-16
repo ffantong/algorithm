@@ -1,6 +1,6 @@
 #include "../pub_include.h"
 
-struct binary_tree_node *root = NULL;
+static struct binary_tree_node *root = NULL;
 
 void tree_build(int *array, int len) {
     struct binary_tree_node *p, *q;
