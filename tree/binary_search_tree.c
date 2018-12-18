@@ -62,32 +62,42 @@ struct binary_tree_node * tree_search(int entity) {
     }
     return NULL;
 }
+
+void transplant(struct binary_tree_node *x, struct binary_tree_node *y){
+    if(x->parent == NULL) {
+        root = y;
+    }else if(x == x->parent->left) {
+        x->parent->left = y;
+    }else{
+        x->parent->right = y;
+    }
+    if(y != NULL) {
+        y->parent = x->parent;
+    }
+}
+
 void tree_remove(struct binary_tree_node *node) {
     if(node == NULL) {
         return;
     }
-    struct binary_tree_node *p;
     if(node->left == NULL) {
-        p = node->right;;
-        node->right->parent = node->parent;
+        transplant(node, node->right);
     }else if(node->right == NULL) {
-        p = node->left;
-        node->left->parent = node->parent;
+        transplant(node, node->left);
     }else {
+        struct binary_tree_node *p;
         p = node->right;
         while(p->left != NULL) {
             p = p->left;
         }
-        if(p != node->right) {
+        if(p->parent != node) {
+            transplant(p, p->right);
             p->right = node->right;
+            p->right->parent = p;
         }
+        transplant(node, p);
         p->left = node->left;
-        p->parent = node->parent;
-    }
-     if(node->parent->left == node){
-        node->parent->left = p;
-    }else {
-        node->parent->right = p;
+        p->left->parent = p;
     }
     free(node);
 }
@@ -98,7 +108,7 @@ void test_tree(){
     tree_build(array, len);
     left_traversal(root);
     printf("\n");
-    struct binary_tree_node *search = tree_search(18);
+    struct binary_tree_node *search = tree_search(15);
     if(search != NULL) {
         printf("find node: %d, parent: %d\n", search->entity, search->parent->entity);
         printf("remove node: %d\n", search->entity);

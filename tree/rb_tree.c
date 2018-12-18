@@ -24,8 +24,8 @@ void left_route(struct rb_tree_node * node){
 void right_route(struct rb_tree_node * node){
     struct rb_tree_node *p = node->left;
     node->left = p->right;
-    if(p->right != NULL) {
-        p->right->parent = node;
+    if(p->left != NULL) {
+        p->left->parent = node;
     }
     p->parent = node->parent;
     if(node == root) {
@@ -156,12 +156,13 @@ void rb_delete_fixup(struct rb_tree_node *node){
             if(p != NULL && p->left->color == BLACK && p->right->color == BLACK) {
                 p->color = RED;
                 node = node->parent;
-            }else if (p != NULL && p->right->color == BLACK) {
-                p->left->color = BLACK;
-                p->color = RED;
-                right_route(p);
-                p = node->parent->right;
-            }else if(p != NULL){
+            }else{
+                if (p != NULL && p->right->color == BLACK) {
+                    p->left->color = BLACK;
+                    p->color = RED;
+                    right_route(p);
+                    p = node->parent->right;
+                }
                 p->color = node->parent->color;
                 node->parent->color = BLACK;
                 p->right->color = BLACK;
@@ -179,12 +180,13 @@ void rb_delete_fixup(struct rb_tree_node *node){
             if(p != NULL && p->left->color == BLACK && p->right->color == BLACK) {
                 p->color = RED;
                 node = node->parent;
-            }else if (p != NULL && p->right->color == BLACK) {
-                p->right->color = BLACK;
-                p->color = RED;
-                left_route(p);
-                p = node->parent->left;
-            }else if(p != NULL){
+            }else {
+                if (p != NULL && p->left->color == BLACK) {
+                    p->right->color = BLACK;
+                    p->color = RED;
+                    left_route(p);
+                    p = node->parent->left;
+                }
                 p->color = node->parent->color;
                 node->parent->color = BLACK;
                 p->left->color = BLACK;
@@ -196,6 +198,19 @@ void rb_delete_fixup(struct rb_tree_node *node){
     node->color = BLACK;
 }
 
+void rb_transplant(struct rb_tree_node *x, struct rb_tree_node *y){
+    if(x->parent == NULL) {
+        root = y;
+    }else if(x == x->parent->left) {
+        x->parent->left = y;
+    }else{
+        x->parent->right = y;
+    }
+    if(y != NULL) {
+        y->parent = x->parent;
+    }
+}
+
 void rb_tree_remove(struct rb_tree_node *node) {
     if(node == NULL) {
         return;
@@ -203,28 +218,31 @@ void rb_tree_remove(struct rb_tree_node *node) {
     struct rb_tree_node *p;
     enum color_enum color_before = node->color;
     if(node->left == NULL) {
-        p = node->right;;
-        node->right->parent = node->parent;
+        p = node->right;
+        rb_transplant(node, node->right);
     }else if(node->right == NULL) {
         p = node->left;
-        node->left->parent = node->parent;
+        rb_transplant(node, node->left);
     }else {
         p = node->right;
         while(p->left != NULL) {
             p = p->left;
         }
-        if(p != node->right) {
-            p->right = node->right;
-        }
-        p->left = node->left;
-        p->parent = node->parent;
         color_before = p->color;
+        struct rb_tree_node *q = p->right;
+        if(q == NULL) {
+            q = p;
+        }
+        if(p->parent != node) {
+            rb_transplant(p, p->right);
+            p->right = node->right;
+            p->right->parent = p;
+        }
+        rb_transplant(node, p);
+        p->left = node->left;
+        p->left->parent = p;
         p->color = node->color;
-    }
-     if(node->parent->left == node){
-        node->parent->left = p;
-    }else {
-        node->parent->right = p;
+        p = q;
     }
     free(node);
     if (color_before == BLACK) {
@@ -253,7 +271,7 @@ void test_rb_tree(){
     rb_left_traversal(root);
     printf("\n");
     rb_center_traversal(root);
-    struct rb_tree_node *search = rb_tree_search(18);
+    struct rb_tree_node *search = rb_tree_search(15);
     if(search != NULL) {
         printf("find node: %d, parent: %d\n", search->entity, search->parent->entity);
         printf("remove node: %d\n", search->entity);
