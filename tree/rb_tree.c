@@ -5,8 +5,8 @@ static struct rb_tree_node *root = NULL;
 void left_route(struct rb_tree_node * node){
     struct rb_tree_node *p = node->right;
     node->right = p->left;
-    if(node->right != NULL) {
-        node->right->parent = node;
+    if(node->left != NULL) {
+        node->left->parent = node;
     }
     p->parent = node->parent;
     if(node == root) {
@@ -24,8 +24,8 @@ void left_route(struct rb_tree_node * node){
 void right_route(struct rb_tree_node * node){
     struct rb_tree_node *p = node->left;
     node->left = p->right;
-    if(p->left != NULL) {
-        p->left->parent = node;
+    if(p->right != NULL) {
+        p->right->parent = node;
     }
     p->parent = node->parent;
     if(node == root) {
@@ -142,60 +142,67 @@ void rb_center_traversal(struct rb_tree_node *node){
     rb_center_traversal(node->right);
 }
 
-void rb_delete_fixup(struct rb_tree_node *node){
+void rb_delete_fixup(struct rb_tree_node *node, struct rb_tree_node *parent, bool fix_left){
     struct rb_tree_node *p;
-    while(node != root && node->color == BLACK) {
-        if(node == node->parent->left) {
-            p = node->parent->right;
+    while(node != root && (node == NULL || node->color == BLACK)) {
+        if(node != NULL && node == node->parent->right){
+            fix_left = false;
+        }else if(node != NULL && node == node->parent->left) {
+            fix_left = true;
+        }
+        if(fix_left) {
+            p = parent->right;
             if (p != NULL && p->color == RED) {
                 p->color = BLACK;
-                node->parent->color = RED;
-                left_route(node->parent);
-                p = node->parent->right;
+                parent->color = RED;
+                left_route(parent);
+                p = parent->right;
             }
             if(p != NULL && p->left->color == BLACK && p->right->color == BLACK) {
                 p->color = RED;
-                node = node->parent;
+                node = parent;
             }else{
                 if (p != NULL && p->right->color == BLACK) {
                     p->left->color = BLACK;
                     p->color = RED;
                     right_route(p);
-                    p = node->parent->right;
+                    p = parent->right;
                 }
-                p->color = node->parent->color;
-                node->parent->color = BLACK;
+                p->color = parent->color;
+                parent->color = BLACK;
                 p->right->color = BLACK;
-                left_route(node->parent);
+                left_route(parent);
                 node = root;
             }
         }else {
-            p = node->parent->left;
+            p = parent->left;
             if (p != NULL && p->color == RED) {
                 p->color = BLACK;
-                node->parent->color = RED;
-                right_route(node->parent);
-                p = node->parent->left;
+                parent->color = RED;
+                right_route(parent);
+                p = parent->left;
             }
             if(p != NULL && p->left->color == BLACK && p->right->color == BLACK) {
                 p->color = RED;
-                node = node->parent;
+                node = parent;
             }else {
                 if (p != NULL && p->left->color == BLACK) {
                     p->right->color = BLACK;
                     p->color = RED;
                     left_route(p);
-                    p = node->parent->left;
+                    p = parent->left;
                 }
-                p->color = node->parent->color;
-                node->parent->color = BLACK;
+                p->color = parent->color;
+                parent->color = BLACK;
                 p->left->color = BLACK;
-                right_route(node->parent);
+                right_route(parent);
                 node = root;
             }
         }
     }
-    node->color = BLACK;
+    if(node != NULL) {
+        node->color = BLACK;
+    }
 }
 
 void rb_transplant(struct rb_tree_node *x, struct rb_tree_node *y){
@@ -215,13 +222,17 @@ void rb_tree_remove(struct rb_tree_node *node) {
     if(node == NULL) {
         return;
     }
-    struct rb_tree_node *p;
+    bool fix_left = false;
+    struct rb_tree_node *p, *parent;
     enum color_enum color_before = node->color;
     if(node->left == NULL) {
         p = node->right;
+        fix_left = true;
+        parent = node->parent;
         rb_transplant(node, node->right);
     }else if(node->right == NULL) {
         p = node->left;
+        parent = node->parent;
         rb_transplant(node, node->left);
     }else {
         p = node->right;
@@ -230,9 +241,7 @@ void rb_tree_remove(struct rb_tree_node *node) {
         }
         color_before = p->color;
         struct rb_tree_node *q = p->right;
-        if(q == NULL) {
-            q = p;
-        }
+        parent = p;
         if(p->parent != node) {
             rb_transplant(p, p->right);
             p->right = node->right;
@@ -246,13 +255,15 @@ void rb_tree_remove(struct rb_tree_node *node) {
     }
     free(node);
     if (color_before == BLACK) {
-        rb_delete_fixup(p);
+        rb_delete_fixup(p, parent, fix_left);
     }
 }
 
 struct rb_tree_node * rb_tree_search(int entity) {
     struct rb_tree_node *p = root;
+    printf("root:%d\n", p->entity);
     while(p != NULL) {
+        printf(":%d\t", p->entity);
         if(entity > p->entity) {
             p = p->right;
         }else if(entity < p->entity) {
@@ -271,7 +282,7 @@ void test_rb_tree(){
     rb_left_traversal(root);
     printf("\n");
     rb_center_traversal(root);
-    struct rb_tree_node *search = rb_tree_search(15);
+    struct rb_tree_node *search = rb_tree_search(13);
     if(search != NULL) {
         printf("find node: %d, parent: %d\n", search->entity, search->parent->entity);
         printf("remove node: %d\n", search->entity);

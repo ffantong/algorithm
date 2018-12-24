@@ -6,11 +6,12 @@
 1543666924 source:e:\code blocks\algorithm\find_max_sumarray.c
 	"pub_include.h"
 
-1544275124 e:\code blocks\algorithm\pub_include.h
+1545661619 e:\code blocks\algorithm\pub_include.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<math.h>
+	<stdbool.h>
 	"tree/tree_pup.h"
 	"sort/sort_pub.h"
 
@@ -35,7 +36,7 @@
 1543761187 source:e:\code blocks\algorithm\radix_sort.c
 	"pub_include.h"
 
-1544968991 e:\code blocks\algorithm\tree\tree_pup.h
+1545661864 e:\code blocks\algorithm\tree\tree_pup.h
 
 1544275114 e:\code blocks\algorithm\sort\sort_pub.h
 
@@ -57,6 +58,6 @@
 1545140746 source:e:\code blocks\algorithm\tree\binary_search_tree.c
 	"../pub_include.h"
 
-1545139847 source:e:\code blocks\algorithm\tree\rb_tree.c
+1545661698 source:e:\code blocks\algorithm\tree\rb_tree.c
 	"../pub_include.h"
 
