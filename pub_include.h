@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include "tree/tree_pup.h"
 #include "sort/sort_pub.h"
+#include "dynamic_programing/dynamic_programing.h"
 
 #define PRINT_ARRAY(array, len)         \
     for(int i = 0; i < len; i++) {      \

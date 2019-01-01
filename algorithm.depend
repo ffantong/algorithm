@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1544887977 source:e:\code blocks\algorithm\main.c
+1546346052 source:e:\code blocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
 1543666924 source:e:\code blocks\algorithm\find_max_sumarray.c
 	"pub_include.h"
 
-1545661619 e:\code blocks\algorithm\pub_include.h
+1545747072 e:\code blocks\algorithm\pub_include.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -14,6 +14,7 @@
 	<stdbool.h>
 	"tree/tree_pup.h"
 	"sort/sort_pub.h"
+	"dynamic_programing/dynamic_programing.h"
 
 1543672448 source:e:\code blocks\algorithm\heapsort.c
 	"pub_include.h"
@@ -59,5 +60,10 @@
 	"../pub_include.h"
 
 1545661698 source:e:\code blocks\algorithm\tree\rb_tree.c
+	"../pub_include.h"
+
+1546347710 e:\code blocks\algorithm\dynamic_programing\dynamic_programing.h
+
+1546347640 source:e:\code blocks\algorithm\dynamic_programing\cut_rod.c
 	"../pub_include.h"
 

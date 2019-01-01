@@ -2,7 +2,7 @@
 #include "tree/tree_pup.h"
 int main()
 {
-    test_heap_sort();
+    /*test_heap_sort();
     printf("\n");
     test_insert_sort();
     printf("\n");
@@ -14,6 +14,7 @@ int main()
     printf("\n");
     test_tree();
     printf("\n");
-    test_rb_tree();
+    test_rb_tree();*/
+    test_cut_rod();
     return 0;
 }
