@@ -35,6 +35,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="dynamic_programing/dynamic_programing.h" />
+		<Unit filename="dynamic_programing/fibonacci.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="find_max_subarray.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -7,4 +7,8 @@ int bottom_cut_rod(int);
 int memoized_cut_rod_aux(int, int *);
 int memoized_cut_rod(int);
 
+int fib(int);
+int fib_1(int, int *);
+int fib_2(int, int *);
+void test_fibonacci();
 #endif // DYNAMIC
