@@ -16,6 +16,7 @@ int main()
     printf("\n");
     test_rb_tree();*/
     //test_cut_rod();
-    test_fibonacci();
+    //test_fibonacci();
+    test_lcs_length();
     return 0;
 }

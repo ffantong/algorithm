@@ -36,7 +36,7 @@ int fib_2(int n, int * arr) {
 }
 
 void test_fibonacci(){
-    int n = 10;
+    int n = 45;
     printf("n = %d, fibonacci = %d\n", n, fib(n));
     int arr[n];
     memset(arr, 0, sizeof(int) * n);

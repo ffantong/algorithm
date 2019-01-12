@@ -38,6 +38,9 @@
 		<Unit filename="dynamic_programing/fibonacci.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="dynamic_programing/lcs_length.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="find_max_subarray.c">
 			<Option compilerVar="CC" />
 		</Unit>
