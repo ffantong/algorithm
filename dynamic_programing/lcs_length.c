@@ -43,22 +43,17 @@ void print_lcs(int ** res, char * a, char * b, int x, int y){
 void bottom_print_lcs(char * a, int a_len, char * b, int b_len, int ** res){
     int lcs[res[a_len - 1][b_len - 1]];
     int idx = 0;
-    for(int i = a_len - 1; i >= 0;) {
-        for(int j = b_len - 1; j >= 0;){
-            if(a[i] == b[j]) {
-                lcs[idx++] = a[i];
-                j--;
+    for(int i = a_len - 1, j = b_len - 1; i >= 0 && j >= 0;) {
+        if(a[i] == b[j]) {
+            lcs[idx++] = a[i];
+            j--;
+            i--;
+        }else {
+            int x_1 = (i == 0 ? 0 : res[i - 1][j]);
+            if(res[i][j] == x_1) {
                 i--;
             }else {
-                int x_1 = (i == 0 ? 0 : res[i - 1][j]);
-                if(res[i][j] == x_1) {
-                    i--;
-                }else {
-                    j--;
-                }
-            }
-            if(j < 0) {
-                i = -1;
+                j--;
             }
         }
     }
