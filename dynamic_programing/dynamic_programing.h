@@ -17,4 +17,7 @@ void lcs_length(char *, int, char *, int, int **);
 void print_lcs(int **, char *, char *, int, int);
 void bottom_print_lcs(char *, int, char *, int, int **);
 void test_lcs_length();
+
+void test_max_sub_sequence();
+void max_sub_sequence(int *, int);
 #endif // DYNAMIC

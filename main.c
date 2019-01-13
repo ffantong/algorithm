@@ -17,6 +17,7 @@ int main()
     test_rb_tree();*/
     //test_cut_rod();
     //test_fibonacci();
-    test_lcs_length();
+    //test_lcs_length();
+    test_max_sub_sequence();
     return 0;
 }

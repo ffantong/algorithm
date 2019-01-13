@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1547303926 source:e:\code blocks\algorithm\main.c
+1547386190 source:e:\code blocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
@@ -62,7 +62,7 @@
 1545661698 source:e:\code blocks\algorithm\tree\rb_tree.c
 	"../pub_include.h"
 
-1547307401 e:\code blocks\algorithm\dynamic_programing\dynamic_programing.h
+1547386006 e:\code blocks\algorithm\dynamic_programing\dynamic_programing.h
 
 1546347640 source:e:\code blocks\algorithm\dynamic_programing\cut_rod.c
 	"../pub_include.h"
@@ -70,6 +70,9 @@
 1546752628 source:e:\code blocks\algorithm\dynamic_programing\fibonacci.c
 	"../pub_include.h"
 
-1547337075 source:e:\code blocks\algorithm\dynamic_programing\lcs_length.c
+1547337130 source:e:\code blocks\algorithm\dynamic_programing\lcs_length.c
+	"../pub_include.h"
+
+1547386168 source:e:\code blocks\algorithm\dynamic_programing\max_sub_sequence.c
 	"../pub_include.h"
 
