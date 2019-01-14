@@ -20,4 +20,5 @@ void test_lcs_length();
 
 void test_max_sub_sequence();
 void max_sub_sequence(int *, int);
+void max_sub_sequence_plus(int *, int);
 #endif // DYNAMIC
