@@ -44,6 +44,9 @@
 		<Unit filename="dynamic_programing/max_sub_sequence.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="dynamic_programing/optimal_bst.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="find_max_subarray.c">
 			<Option compilerVar="CC" />
 		</Unit>

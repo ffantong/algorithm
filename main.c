@@ -18,6 +18,7 @@ int main()
     //test_cut_rod();
     //test_fibonacci();
     //test_lcs_length();
-    test_max_sub_sequence();
+    //test_max_sub_sequence();
+    test_optimal_bst();
     return 0;
 }

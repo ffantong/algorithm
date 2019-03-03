@@ -21,4 +21,8 @@ void test_lcs_length();
 void test_max_sub_sequence();
 void max_sub_sequence(int *, int);
 void max_sub_sequence_plus(int *, int);
+
+float optimal_bst(float *, float *, int, int, int, int);
+void test_optimal_bst();
+
 #endif // DYNAMIC
