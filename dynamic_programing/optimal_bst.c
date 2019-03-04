@@ -5,10 +5,10 @@ float optimal_bst(float * p, float * q, int start, int end, int root, int depth)
     float best_left, best_right;
     float temp;
     if(start == end - 1 && start == root) {
-        return p[root] * (depth) + (q[root - 1] + q[root]) * (depth + 1);
+        return p[root] * (depth + 1) + (q[root - 1] + q[root]) * (depth + 2);
     }
     if(start == root) {
-        best_left = p[root] * (depth) + q[root - 1] * (depth + 1);
+        best_left = q[root - 1] * (depth + 2);
     }else {
         best_left = optimal_bst(p, q, start, root, start, depth + 1);
         for(int i = start + 1; i < root; i++) {
@@ -19,7 +19,7 @@ float optimal_bst(float * p, float * q, int start, int end, int root, int depth)
         }
     }
     if(end == (root + 1)) {
-        best_right = p[root] * (depth) + q[root] * (depth + 1);
+        best_right = q[root] * (depth + 2);
     }else {
         best_right = optimal_bst(p, q, root + 1, end, root + 1, depth + 1);
         for(int i = root + 2; i < end; i++) {
@@ -36,6 +36,6 @@ float optimal_bst(float * p, float * q, int start, int end, int root, int depth)
 void test_optimal_bst() {
     float p[] = {0, 0.15, 0.10, 0.05, 0.10, 0.20};
     float q[] = {0.05, 0.10, 0.05, 0.05, 0.05, 0.10};
-    float best = optimal_bst(p, q, 1, 6, 3, 0);
+    float best = optimal_bst(p, q, 1, 6, 2, 0);
     printf("best: %f", best);
 }
