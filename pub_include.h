@@ -8,6 +8,7 @@
 #include "tree/tree_pup.h"
 #include "sort/sort_pub.h"
 #include "dynamic_programing/dynamic_programing.h"
+#include "greedy_programming/greddy_programming.h"
 
 #define PRINT_ARRAY(array, len)         \
     for(int i = 0; i < len; i++) {      \

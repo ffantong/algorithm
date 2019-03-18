@@ -19,6 +19,7 @@ int main()
     //test_fibonacci();
     //test_lcs_length();
     //test_max_sub_sequence();
-    test_optimal_bst();
+    //test_optimal_bst();
+    test_activity_selector();
     return 0;
 }

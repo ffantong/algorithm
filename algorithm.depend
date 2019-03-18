@@ -79,7 +79,7 @@
 1548684264 source:e:\codeblocks\algorithm\dynamic_programing\cut_rod.c
 	"../pub_include.h"
 
-1548684264 e:\codeblocks\algorithm\pub_include.h
+1552919690 e:\codeblocks\algorithm\pub_include.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -88,12 +88,13 @@
 	"tree/tree_pup.h"
 	"sort/sort_pub.h"
 	"dynamic_programing/dynamic_programing.h"
+	"greedy_programming/greddy_programming.h"
 
 1548684264 e:\codeblocks\algorithm\tree\tree_pup.h
 
 1548684264 e:\codeblocks\algorithm\sort\sort_pub.h
 
-1551597136 e:\codeblocks\algorithm\dynamic_programing\dynamic_programing.h
+1552139753 e:\codeblocks\algorithm\dynamic_programing\dynamic_programing.h
 
 1548684264 source:e:\codeblocks\algorithm\dynamic_programing\fibonacci.c
 	"../pub_include.h"
@@ -107,7 +108,7 @@
 1548684264 source:e:\codeblocks\algorithm\find_max_subarray.c
 	"pub_include.h"
 
-1551593761 source:e:\codeblocks\algorithm\main.c
+1552919677 source:e:\codeblocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
@@ -132,6 +133,8 @@
 1548684264 source:e:\codeblocks\algorithm\tree\rb_tree.c
 	"../pub_include.h"
 
-1551615725 source:e:\codeblocks\algorithm\dynamic_programing\optimal_bst.c
+1552139730 source:e:\codeblocks\algorithm\dynamic_programing\optimal_bst.c
 	"../pub_include.h"
+
+1552919718 e:\codeblocks\algorithm\greedy_programming\greddy_programming.h
 
