@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1547386190 source:e:\code blocks\algorithm\main.c
+1552971866 source:e:\code blocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
 1543666924 source:e:\code blocks\algorithm\find_max_sumarray.c
 	"pub_include.h"
 
-1545747072 e:\code blocks\algorithm\pub_include.h
+1552971866 e:\code blocks\algorithm\pub_include.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -15,6 +15,7 @@
 	"tree/tree_pup.h"
 	"sort/sort_pub.h"
 	"dynamic_programing/dynamic_programing.h"
+	"greedy_programming/greddy_programming.h"
 
 1543672448 source:e:\code blocks\algorithm\heapsort.c
 	"pub_include.h"
@@ -22,7 +23,7 @@
 1543672477 source:e:\code blocks\algorithm\insert_sort.c
 	"pub_include.h"
 
-1543672463 source:e:\code blocks\algorithm\find_max_subarray.c
+1552971866 source:e:\code blocks\algorithm\find_max_subarray.c
 	"pub_include.h"
 
 1543674636 source:e:\code blocks\algorithm\quick_sort.c
@@ -37,43 +38,43 @@
 1543761187 source:e:\code blocks\algorithm\radix_sort.c
 	"pub_include.h"
 
-1545661864 e:\code blocks\algorithm\tree\tree_pup.h
+1552971866 e:\code blocks\algorithm\tree\tree_pup.h
 
-1544275114 e:\code blocks\algorithm\sort\sort_pub.h
+1552971866 e:\code blocks\algorithm\sort\sort_pub.h
 
-1544275140 source:e:\code blocks\algorithm\sort\counting_sort.c
+1552971866 source:e:\code blocks\algorithm\sort\counting_sort.c
 	"../pub_include.h"
 
-1544275166 source:e:\code blocks\algorithm\sort\heap_sort.c
+1552971866 source:e:\code blocks\algorithm\sort\heap_sort.c
 	"../pub_include.h"
 
-1544275146 source:e:\code blocks\algorithm\sort\insert_sort.c
+1552971866 source:e:\code blocks\algorithm\sort\insert_sort.c
 	"../pub_include.h"
 
-1544275174 source:e:\code blocks\algorithm\sort\quick_sort.c
+1552971866 source:e:\code blocks\algorithm\sort\quick_sort.c
 	"../pub_include.h"
 
-1544275180 source:e:\code blocks\algorithm\sort\radix_sort.c
+1552971866 source:e:\code blocks\algorithm\sort\radix_sort.c
 	"../pub_include.h"
 
-1545140746 source:e:\code blocks\algorithm\tree\binary_search_tree.c
+1552971866 source:e:\code blocks\algorithm\tree\binary_search_tree.c
 	"../pub_include.h"
 
-1545661698 source:e:\code blocks\algorithm\tree\rb_tree.c
+1552971866 source:e:\code blocks\algorithm\tree\rb_tree.c
 	"../pub_include.h"
 
-1547473850 e:\code blocks\algorithm\dynamic_programing\dynamic_programing.h
+1552971866 e:\code blocks\algorithm\dynamic_programing\dynamic_programing.h
 
-1546347640 source:e:\code blocks\algorithm\dynamic_programing\cut_rod.c
+1552971866 source:e:\code blocks\algorithm\dynamic_programing\cut_rod.c
 	"../pub_include.h"
 
-1546752628 source:e:\code blocks\algorithm\dynamic_programing\fibonacci.c
+1552971866 source:e:\code blocks\algorithm\dynamic_programing\fibonacci.c
 	"../pub_include.h"
 
-1547337130 source:e:\code blocks\algorithm\dynamic_programing\lcs_length.c
+1552971866 source:e:\code blocks\algorithm\dynamic_programing\lcs_length.c
 	"../pub_include.h"
 
-1547386168 source:e:\code blocks\algorithm\dynamic_programing\max_sub_sequence.c
+1552971866 source:e:\code blocks\algorithm\dynamic_programing\max_sub_sequence.c
 	"../pub_include.h"
 
 1548684264 source:e:\codeblocks\algorithm\dynamic_programing\cut_rod.c
@@ -137,4 +138,12 @@
 	"../pub_include.h"
 
 1552919718 e:\codeblocks\algorithm\greedy_programming\greddy_programming.h
+
+1552973758 e:\code blocks\algorithm\greedy_programming\greddy_programming.h
+
+1552971866 source:e:\code blocks\algorithm\dynamic_programing\optimal_bst.c
+	"../pub_include.h"
+
+1552973555 source:e:\code blocks\algorithm\greedy_programming\activity_selector.c
+	"../pub_include.h"
 
