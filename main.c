@@ -20,6 +20,7 @@ int main()
     //test_lcs_length();
     //test_max_sub_sequence();
     //test_optimal_bst();
-    test_activity_selector();
+    //test_activity_selector();
+    test_task_schedule();
     return 0;
 }

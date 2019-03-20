@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1552971866 source:e:\code blocks\algorithm\main.c
+1553060049 source:e:\code blocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
@@ -139,7 +139,7 @@
 
 1552919718 e:\codeblocks\algorithm\greedy_programming\greddy_programming.h
 
-1552973758 e:\code blocks\algorithm\greedy_programming\greddy_programming.h
+1553059540 e:\code blocks\algorithm\greedy_programming\greddy_programming.h
 
 1552971866 source:e:\code blocks\algorithm\dynamic_programing\optimal_bst.c
 	"../pub_include.h"

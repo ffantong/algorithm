@@ -54,6 +54,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="greedy_programming/greddy_programming.h" />
+		<Unit filename="greedy_programming/task_schedule.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
