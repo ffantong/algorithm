@@ -53,6 +53,9 @@
 		<Unit filename="greedy_programming/activity_selector.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="greedy_programming/give_change.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="greedy_programming/greddy_programming.h" />
 		<Unit filename="greedy_programming/task_schedule.c">
 			<Option compilerVar="CC" />

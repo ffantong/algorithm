@@ -22,5 +22,6 @@ int main()
     //test_optimal_bst();
     //test_activity_selector();
     test_task_schedule();
+    test_give_change();
     return 0;
 }

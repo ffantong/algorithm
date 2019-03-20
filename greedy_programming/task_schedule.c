@@ -20,6 +20,7 @@ void task_schedule(int * endtimes, int * punish, int len){
     for(int i = 0; i < result_len; i++) {
         printf("%d\t", results[i]);
     }
+    printf("\n");
     free(results);
 }
 void test_task_schedule(){

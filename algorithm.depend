@@ -109,7 +109,7 @@
 1548684264 source:e:\codeblocks\algorithm\find_max_subarray.c
 	"pub_include.h"
 
-1552919677 source:e:\codeblocks\algorithm\main.c
+1553090048 source:e:\codeblocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
@@ -137,7 +137,7 @@
 1552139730 source:e:\codeblocks\algorithm\dynamic_programing\optimal_bst.c
 	"../pub_include.h"
 
-1552919718 e:\codeblocks\algorithm\greedy_programming\greddy_programming.h
+1553089953 e:\codeblocks\algorithm\greedy_programming\greddy_programming.h
 
 1553059540 e:\code blocks\algorithm\greedy_programming\greddy_programming.h
 
@@ -145,5 +145,14 @@
 	"../pub_include.h"
 
 1552973555 source:e:\code blocks\algorithm\greedy_programming\activity_selector.c
+	"../pub_include.h"
+
+1553089472 source:e:\codeblocks\algorithm\greedy_programming\activity_selector.c
+	"../pub_include.h"
+
+1553090144 source:e:\codeblocks\algorithm\greedy_programming\task_schedule.c
+	"../pub_include.h"
+
+1553092594 source:e:\codeblocks\algorithm\greedy_programming\give_change.c
 	"../pub_include.h"
 
