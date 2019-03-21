@@ -14,7 +14,7 @@ void activity_selector_dynamic(int * starts, int *ends, int len) {
     int * start = malloc(sizeof(int) * len);
     int * end = malloc(sizeof(int) * len);
     int * length = malloc(sizeof(int) * len);
-    int ** routes = malloc(sizeof(int) * len);
+    int ** routes = malloc(sizeof(int *) * len);
     int max = 1, max_idx = 0;
     for(int i = 0; i < len; i++) {
         start[i] = starts[i];
