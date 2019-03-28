@@ -80,6 +80,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sort/sort_pub.h" />
+		<Unit filename="tree/b_tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="tree/binary_search_tree.c">
 			<Option compilerVar="CC" />
 		</Unit>

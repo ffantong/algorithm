@@ -38,4 +38,17 @@ void left_route(struct rb_tree_node *);
 void rb_delete_fixup(struct rb_tree_node *, struct rb_tree_node *, bool);
 void rb_transplant(struct rb_tree_node *, struct rb_tree_node *);
 
+
+struct b_tree_node {
+    int key_len;
+    int *keys;
+    bool is_leaf;
+    struct b_tree_node ** childs;
+};
+void b_tree_init();
+void b_tree_create_node(struct b_tree_node *);
+void b_tree_insert(int);
+void b_tree_delete(struct b_tree_node *);
+void b_tree_test();
+
 #endif // TREE_PUB
