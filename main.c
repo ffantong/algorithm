@@ -21,7 +21,8 @@ int main()
     //test_max_sub_sequence();
     //test_optimal_bst();
     //test_activity_selector();
-    test_task_schedule();
-    test_give_change();
+    //test_task_schedule();
+    //test_give_change();
+    b_tree_test();
     return 0;
 }

@@ -46,9 +46,10 @@ struct b_tree_node {
     struct b_tree_node ** childs;
 };
 void b_tree_init();
-void b_tree_create_node(struct b_tree_node *);
+struct b_tree_node * b_tree_create_node();
 void b_tree_insert(int);
 void b_tree_delete(struct b_tree_node *);
 void b_tree_test();
+void b_tree_search(struct b_tree_node *, int);
 
 #endif // TREE_PUB
