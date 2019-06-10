@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1553141882 source:e:\code blocks\algorithm\main.c
+1560146043 source:e:\code blocks\algorithm\main.c
 	"pub_include.h"
 	"tree/tree_pup.h"
 
 1543666924 source:e:\code blocks\algorithm\find_max_sumarray.c
 	"pub_include.h"
 
-1552971866 e:\code blocks\algorithm\pub_include.h
+1560148386 e:\code blocks\algorithm\pub_include.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -38,9 +38,9 @@
 1543761187 source:e:\code blocks\algorithm\radix_sort.c
 	"pub_include.h"
 
-1553751422 e:\code blocks\algorithm\tree\tree_pup.h
+1554096818 e:\code blocks\algorithm\tree\tree_pup.h
 
-1552971866 e:\code blocks\algorithm\sort\sort_pub.h
+1560145846 e:\code blocks\algorithm\sort\sort_pub.h
 
 1552971866 source:e:\code blocks\algorithm\sort\counting_sort.c
 	"../pub_include.h"
@@ -163,5 +163,11 @@
 	"../pub_include.h"
 
 1554024520 source:e:\codeblocks\algorithm\tree\b_tree.c
+	"../pub_include.h"
+
+1554096818 source:e:\code blocks\algorithm\tree\b_tree.c
+	"../pub_include.h"
+
+1560149003 source:e:\code blocks\algorithm\sort\shell_sort.c
 	"../pub_include.h"
 

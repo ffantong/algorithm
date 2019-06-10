@@ -18,4 +18,7 @@ void test_counting_sort();
 void radix_sort(int *, int);
 void test_radix_sort();
 
+void shell_sort(int *array, int len);
+void test_shell_sort();
+
 #endif // SORT_PUB

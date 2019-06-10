@@ -79,6 +79,9 @@
 		<Unit filename="sort/radix_sort.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sort/shell_sort.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sort/sort_pub.h" />
 		<Unit filename="tree/b_tree.c">
 			<Option compilerVar="CC" />
