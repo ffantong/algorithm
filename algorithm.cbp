@@ -50,6 +50,10 @@
 		<Unit filename="find_max_subarray.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="graph/graph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="graph/graph.h" />
 		<Unit filename="greedy_programming/activity_selector.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -9,6 +9,7 @@
 #include "sort/sort_pub.h"
 #include "dynamic_programing/dynamic_programing.h"
 #include "greedy_programming/greddy_programming.h"
+#include "graph/graph.h"
 
 #define PRINT_ARRAY(array, len)         \
     for(int i = 0; i < len; i++) {      \

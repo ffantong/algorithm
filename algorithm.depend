@@ -6,7 +6,7 @@
 1543666924 source:e:\code blocks\algorithm\find_max_sumarray.c
 	"pub_include.h"
 
-1560148386 e:\code blocks\algorithm\pub_include.h
+1560406379 e:\code blocks\algorithm\pub_include.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -16,6 +16,7 @@
 	"sort/sort_pub.h"
 	"dynamic_programing/dynamic_programing.h"
 	"greedy_programming/greddy_programming.h"
+	"graph/graph.h"
 
 1543672448 source:e:\code blocks\algorithm\heapsort.c
 	"pub_include.h"
@@ -165,9 +166,11 @@
 1554024520 source:e:\codeblocks\algorithm\tree\b_tree.c
 	"../pub_include.h"
 
-1554096818 source:e:\code blocks\algorithm\tree\b_tree.c
+1560407586 source:e:\code blocks\algorithm\tree\b_tree.c
 	"../pub_include.h"
 
-1560149003 source:e:\code blocks\algorithm\sort\shell_sort.c
+1560408310 source:e:\code blocks\algorithm\sort\shell_sort.c
 	"../pub_include.h"
+
+1560408705 e:\code blocks\algorithm\graph\graph.h
 
