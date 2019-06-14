@@ -14,8 +14,11 @@ struct graph_edge {
 
 #define NODE_COUNT 8
 
-struct graph_node * nodes;
+struct graph_node * graph_nodes;
 
-void init_graph();
+int ** graph_map;
+
+void graph_init();
+void graph_destroy();
 
 #endif // GRAPH

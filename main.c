@@ -24,6 +24,8 @@ int main()
     //test_task_schedule();
     //test_give_change();
     //b_tree_test();
+    graph_init();
+    graph_destroy();
     test_shell_sort();
     return 0;
 }
