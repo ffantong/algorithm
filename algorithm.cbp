@@ -50,6 +50,9 @@
 		<Unit filename="find_max_subarray.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="graph/dijkstra.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="graph/graph.c">
 			<Option compilerVar="CC" />
 		</Unit>
